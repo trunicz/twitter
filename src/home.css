@@ -15,23 +15,25 @@ body{
 }
 
 .options{
-    width: 50vh;
+    min-width: 40vh;
     max-height: 100vh;
-    background: firebrick ;
+    background: bla ;
     display: flex;
-    padding: 2vh 0 10vh 10vh;
+    padding: 2vh 0;
     font-family: Arial,monospace;
     font-size: 1.5vh;
     color: whitesmoke;
     gap: 0;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: fixed;
 }
 
 .news{
     width: 39%;
     height: 100vh;
-    background: green;
+    background: bla;
     border: 3px solid whitesmoke;
     border-bottom:0 ;
     border-top:0 ;
@@ -209,7 +211,7 @@ body{
 .options .icon-texto{
     background: black;
     border-radius: 50vh;
-    width: 85%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -222,10 +224,10 @@ body{
     margin-left: 4vh ;
 }
 .options .logo{
+    align-self: flex-start ;
+    margin-left: 7.5vh;
+    margin-bottom: 2vh;
 
-    margin-bottom: 30px;
-    margin-right:40vh;
-    margin-left: 4vh ;
 }
 .button{
     background: dodgerblue;
@@ -299,9 +301,11 @@ body{
         width: 75%;
     }
     .options{
-        width: 10%;
-        padding: 5vh 0 5vh 13vh;
+        min-width: 10%;
         gap: 5px;
+    }
+    .options .logo{
+        align-self: center;
     }
     .options .icon-texto{
         width: 8vh;
@@ -355,7 +359,7 @@ body{
     }
 }
 
-@media (max-width: 100vh) {
+@media (max-width: 110vh) {
 
     .options{
         display: none;
